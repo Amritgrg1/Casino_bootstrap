@@ -91,3 +91,53 @@ body {
   }
   
 }
+.banner-part {
+  h1 {
+    line-height: 1;
+  }
+}
+
+.btn {
+  max-width: 230px;
+}  
+
+ //text-area styling
+// .text-area {
+//   position: relative;
+
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     bottom: 2px;
+//     right: 2px;
+//     @include size(20px);
+//     text-align: right;
+//     background: $white;
+//     pointer-events: none;
+//   }
+// }
+
+textarea {
+  resize: none;
+  height: 110px;
+}
+
+.z-index-max {
+  z-index: 999;
+}
+
+.blockquote {
+  p {
+    quotes: none;
+
+    &:after {
+      content: "\e978";
+      font-family: icomoon;
+    }
+    &:before {
+      content: "\e977";
+      font-family: icomoon;
+      
+    }
+  }
+}

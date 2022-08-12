@@ -93,6 +93,12 @@ $colors: map-merge((
 }
 
 @each $color, $value in $colors {
+	.border-#{$color} {
+		border-color: $value !important;
+	}
+}
+
+@each $color, $value in $colors {
 	.text-hover-#{$color} {
 		&:hover {
 			text-decoration: none !important;
@@ -115,7 +121,10 @@ $spacers: map-merge((
 	0_9: 0.9rem,
 	10: 1rem,
 	15: 1.5rem,
-	30: 3rem
+	30: 3rem,
+	40: 4rem,
+	50: 5rem,
+	100:10rem,
 	), $spacers);
 
 $rem-base: 10px;
@@ -163,7 +172,14 @@ $btn-padding-x:               2rem;
 $btn-font-family:             $font-family-base;
 $btn-font-size:               1.7rem;
 $btn-line-height:             1;
+$btn-border-width:            0.2rem;
+
 
 $btn-font-weight:  $font-weight-normal; 
+
 $body-bg:                  white;
+
+//box-shadow
+
+$box-shadow:  0 0rem rgba(#020308, .06) !default
 
